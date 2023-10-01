@@ -1,0 +1,31 @@
+{
+	"root": true,
+	"parser": "@typescript-eslint/parser",
+	"plugins": ["@typescript-eslint"],
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/eslint-recommended",
+		"plugin:@typescript-eslint/recommended",
+		"prettier"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2020,
+		"sourceType": "module"
+	},
+	"rules": {
+		"semi": [1, "always"],
+		"quotes": ["error", "single"],
+		"curly": "error",
+		"space-before-function-paren": [0, { "anonymous": "always", "named": "always" }],
+		"camelcase": 0,
+		"@typescript-eslint/no-unused-vars": "warn",
+		"@typescript-eslint/no-explicit-any": "error",
+		"no-return-assign": 0,
+		"no-empty": "error",
+		"no-undef": "off",
+        "no-unused-vars": "error", // Advierte sobre variables no utilizadas
+        "no-var": "error", // Prefiere let o const en lugar de var
+        "eqeqeq": "error" // Requiere el uso de === en lugar de ==
+
+	}
+}
